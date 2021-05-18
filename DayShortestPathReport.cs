@@ -36,6 +36,11 @@ namespace DistanceDrivenCalc
 
         internal override string ColumnValue(int row, int col)
         {
+            if(reportData.Count == 0)
+            {
+                return "";
+            }
+
             return col switch
             {
                 DATE_COLUMN => reportData[row].date.ToShortDateString(),

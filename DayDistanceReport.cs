@@ -17,7 +17,7 @@ namespace DistanceDrivenCalc
 
             foreach (var (key, value) in dayEdgeDistance)
             {
-                reportData.Add((date: key, src: value.edge.Source, dest: value.edge.Target, dist: value.distance));
+                reportData.Add((key.date, src: key.edge.Source, dest: key.edge.Target, dist: value));
             }
         }
 

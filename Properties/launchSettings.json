@@ -2,7 +2,7 @@
   "profiles": {
     "DistanceDrivenCalc": {
       "commandName": "Project",
-      "commandLineArgs": "kilometrówka - przykład.xlsx report.xlsx  AIzaSyBODmSaTnpeuj-KaR9PY9_Hxh9HNYLuJsY"
+      "commandLineArgs": "\"kilometrówka - przykład.xlsx\"  report.xlsx  AIzaSyBODmSaTnpeuj-KaR9PY9_Hxh9HNYLuJsY"
     }
   }
 }

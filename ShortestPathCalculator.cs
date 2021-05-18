@@ -35,6 +35,10 @@ namespace DistanceDrivenCalc
 
                     result.Add(day, optimalPath);
                 }
+                else
+                {
+                    Console.WriteLine($"Unable to find shortest path from {root} to {target}");
+                }
             }
 
             return result;

@@ -117,7 +117,7 @@ namespace DistanceDrivenCalc
                                 Elem.Name = ToString(strArr, 2, "nazwa"); 
                                 Elem.Street = ToString(strArr, 3, "ulica"); 
                                 Elem.Zip = ToString(strArr, 4, "kod pocztowy");
-                                Elem.City = ToString(strArr, 3, "miasto");
+                                Elem.City = ToString(strArr, 5, "miasto");
 
                                 if (CurrentError != "Ok")
                                     return null;
@@ -235,11 +235,11 @@ namespace DistanceDrivenCalc
 
                     for (int i = 0; i < rowCount; i++)
                     {
-                        fileData.ArrivalDateStr = ToStringXLS(ds.Tables[0].Rows[i], 1, "head");
-                        fileData.Name = ToStringXLS(ds.Tables[0].Rows[i], 2, "head");
-                        fileData.Street = ToStringXLS(ds.Tables[0].Rows[i], 3, "head"); 
-                        fileData.Zip = ToStringXLS(ds.Tables[0].Rows[i], 4, "head"); 
-                        fileData.City = ToStringXLS(ds.Tables[0].Rows[i], 5, "head"); 
+                        fileData.ArrivalDateStr = ToStringXLS(ds.Tables[0].Rows[i], 0, "head");
+                        fileData.Name = ToStringXLS(ds.Tables[0].Rows[i], 1, "head");
+                        fileData.Street = ToStringXLS(ds.Tables[0].Rows[i], 2, "head"); 
+                        fileData.Zip = ToStringXLS(ds.Tables[0].Rows[i], 3, "head"); 
+                        fileData.City = ToStringXLS(ds.Tables[0].Rows[i], 4, "head"); 
 
                         string TempStr = "num" +
                             ind.ToString() + separator +
